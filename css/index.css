@@ -72,6 +72,45 @@ section, footer{
     width: 80%;
     margin: 0 auto;
 }
+/*Header and Nav*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+ nav .logo {
+     width: 20%;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .header-img {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 5%;
+ }
+
+ .header-img img {
+     width: 80%;
+ }
+
+
 
 /*Top Section Styles*/
 
@@ -93,6 +132,8 @@ section, footer{
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+
 }
 
 .middle-content h2 {
@@ -103,15 +144,58 @@ section, footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .middle-content .boxes .box {
     background: black;
-    margin: 4% 0;
+    margin: 2% 2%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 12vw;
+    height: 12vw;
+}
+
+.middle-content .boxes #box1 {
+    background: teal;
+}
+
+.middle-content .boxes #box2 {
+    background: gold;
+}
+
+.middle-content .boxes #box3 {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes #box4 {
+    background-color: coral;
+}
+
+.middle-content .boxes #box5 {
+    background-color: crimson;
+}
+
+.middle-content .boxes #box6 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes #box7 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes #box8 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes #box9 {
+    background-color: indigo;
+}
+
+.middle-content .boxes #box10 {
+    background-color: dodgerblue;
 }
 
 /*Bottom Section Styles*/
