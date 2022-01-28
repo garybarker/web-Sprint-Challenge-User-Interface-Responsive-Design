@@ -54,10 +54,12 @@ table {
 html{
     font-size:62.5%;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.5;
-    font-size:1.6rem;
+    font-size:2rem;
+    justify-content: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -90,9 +92,20 @@ nav {
     width: 80%;
 }
  nav .logo {
-     width: 20%;
+     width: 25%;
+    
  }
 
+ nav .logo-img {
+     width: 80%;
+ }
+
+ nav .links {
+     width: 75%;
+     display: flex;
+     justify-content: space-between;
+     
+ }
  nav a {
      text-decoration: none;
      color: black;
@@ -107,8 +120,9 @@ nav {
  }
 
  .header-img img {
-     width: 80%;
+     width: 90%;
  }
+ 
 
 
 
@@ -124,7 +138,7 @@ nav {
 }
 
 .top-content .text-container {
-    width: 35%;
+    width: 40%;
     padding: 0 1%;
     padding-bottom: 4%;  
 }
@@ -216,9 +230,109 @@ nav {
 footer {
     width: 100%;
     background-color: #ff4b00;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav a{
+    color: white;
 }
 
 /*About Page Styles*/
+.about-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.about-info {
+    border-bottom: 2px solid #ff4b00;
+    
+}
 
+.middle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.middle .card {
+    border-bottom: 2px solid #ff4b00;
+    width: 35%;
+    margin: 3% 3%;
+    height: 70vh;
+    text-align: justify;
+    
+}
+.middle .card h2 {
+    margin: 30px 0;
+}
+.middle .card p{
+    width: 100%;
+    padding-bottom: 30px;
+}
 /*Responsive Styles*/
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 1.75rem;
+    }
+
+    nav {
+        flex-flow: column nowrap;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+    nav .logo {
+        width: 40%;
+        margin-bottom: 2%;
+    }
+
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 10% 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 36vw;
+        height: 36vw;
+                
+    }
+
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bottom-content .text-container{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .middle .card {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 5%;
+        
+    }
+
+    .middle .card img {
+        width: 100%;
+    }
+
+    .middle .card p {
+        font-size: 1.75rem;
+        padding-bottom: 5%;
+    }
+}
